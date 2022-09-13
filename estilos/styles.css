@@ -29,7 +29,16 @@
     height: 80px;
 } 
 
+header ul li:hover{
+    font-size: 150%;
+}
 
+header ul li:active{
+    font-size: 150%;
+    border: solid;
+    border-radius: 5px;
+    background-color:  #052e2d;
+}
 
 /* FOOTER */
 
