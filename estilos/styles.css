@@ -148,6 +148,11 @@ footer p{
     border: groove;
 }
 
+.tarjetaMd{
+    display: flex;
+    justify-content: center;
+}
+
 /* TURNOS */
 
 .caja{
