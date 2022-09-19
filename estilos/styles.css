@@ -7,19 +7,52 @@
 /* CABECERA */
 
 
-.nav-link, .btn-outline-primary{
+.nav-link{
     color: #24d2cc;
     font-weight: bold;
     font-style: italic;
+    font-size: 120%;
+    padding-right: 30px;
+    padding-left: 30px;
 }
-.navbar, .btn-outline-primary, header{
+
+
+.navbar{
     background-color: #0d4b49;
 }
 
 
-.botones{
-    color: #24d2cc;
+
+.navbar-nav .nav-link.active{
+    color: white;
+    font-size: 130%;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar-nav .nav-link.active{
+        color: black;
+        font-size: 130%;
+    }  
+    .navbar{
+        background-image: url(../imagenes/logo/otros_formatos/facebook_cover_photo_2.png);
+        background-size: cover;
+        background-color: #ffffff;
+    }
+
+    .nav-link{
+        color: #0d4b49;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        background-image: none;
+    }
+    
+}
+
+
 
 .logo img{
     width: auto;
@@ -28,6 +61,8 @@
 
 header ul li:hover{
     font-size: 150%;
+    transition: 0.5s;
+
 }
 
 header ul li:active{
@@ -72,7 +107,14 @@ footer p{
     font-size: 150%;
     font-weight: bold;
     align-items: center;
-    line-height: 120%; 
+    line-height: 120%;
+}
+
+@media screen and (max-width: 768px) {
+    .seccionPpl{
+        background-image: none;
+    }
+
 }
 
 
@@ -132,6 +174,32 @@ footer p{
     background-size: cover;
 }
 
+@media screen and (max-width: 768px) {
+   #mani ,#pedi, #cosme{
+    background-image: none;
+   }
+
+   .textServicio{
+    text-align: start;
+   }
+
+   .tipoServicio h2{
+    text-decoration: underline;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 1rem 0rem 1rem 1rem;
+    }
+
+    .tipoServicio p,ul{
+    margin: 1rem 0rem 1rem 4rem; 
+    }
+
+    .tipoServicio li{
+    margin-bottom: 1rem;
+    }
+   
+
+}
 
 /* PROMOCIONES */
 
@@ -152,17 +220,27 @@ footer p{
     justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+    .cuerpoPromo{
+        display: block;
+        height: 200px;
+    }
+
+  
+}
+
 /* TURNOS */
 
 .caja{
     
-    height: 800px;
+    height: auto;
     justify-content: center;
     background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
+
 .caja_Turnos{
     display: flex;
     justify-content: space-around;
@@ -197,6 +275,16 @@ footer p{
     background-color: #25706E;
     border-radius: 20px;
     border-style: dotted;
+}
+
+@media screen and (max-width: 1200px) {
+    .caja_Turnos{
+        width: 100%;
+    }
+    
+    .caja{
+        background-image: none;
+    }
 }
 
 /* GALERIA */
