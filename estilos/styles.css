@@ -12,10 +12,34 @@
     font-weight: bold;
     font-style: italic;
 }
-.navbar, .btn-outline-primary, header{
+.navbar{
     background-color: #0d4b49;
 }
 
+.btn-outline-primary{
+    background-color: #0d4b49;
+}
+
+header{
+    background-color: #0d4b49;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* header{
+        background-color: #ffffff;
+    }
+
+    .navbar{
+        background-color: #ffffff;
+    }
+    
+    .botBurguer{
+        color: black;
+    }
+     */
+        
+}
 
 .botones{
     color: #24d2cc;
@@ -72,8 +96,7 @@ footer p{
     font-size: 150%;
     font-weight: bold;
     align-items: center;
-    line-height: 120%%;
-  
+    line-height: 120%;
 }
 
 
