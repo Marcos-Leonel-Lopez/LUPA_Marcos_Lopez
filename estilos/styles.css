@@ -7,43 +7,52 @@
 /* CABECERA */
 
 
-.nav-link, .btn-outline-primary{
+.nav-link{
     color: #24d2cc;
     font-weight: bold;
     font-style: italic;
+    font-size: 120%;
+    padding-right: 30px;
+    padding-left: 30px;
 }
+
+
 .navbar{
     background-color: #0d4b49;
 }
 
-.btn-outline-primary{
-    background-color: #0d4b49;
-}
 
-header{
-    background-color: #0d4b49;
+
+.navbar-nav .nav-link.active{
+    color: white;
+    font-size: 130%;
 }
 
 @media screen and (max-width: 768px) {
-
-    /* header{
+    .navbar-nav .nav-link.active{
+        color: black;
+        font-size: 130%;
+    }  
+    .navbar{
+        background-image: url(../imagenes/logo/otros_formatos/facebook_cover_photo_2.png);
+        background-size: cover;
         background-color: #ffffff;
     }
 
+    .nav-link{
+        color: #0d4b49;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
     .navbar{
-        background-color: #ffffff;
+        background-image: none;
     }
     
-    .botBurguer{
-        color: black;
-    }
-     */
-        
 }
 
-.botones{
-    color: #24d2cc;
-}
+
 
 .logo img{
     width: auto;
@@ -52,6 +61,8 @@ header{
 
 header ul li:hover{
     font-size: 150%;
+    transition: 0.5s;
+
 }
 
 header ul li:active{
@@ -97,6 +108,13 @@ footer p{
     font-weight: bold;
     align-items: center;
     line-height: 120%;
+}
+
+@media screen and (max-width: 768px) {
+    .seccionPpl{
+        background-image: none;
+    }
+
 }
 
 
