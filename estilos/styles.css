@@ -54,7 +54,7 @@
 
 
 
-.logo img{
+header .logo img{
     width: auto;
     height: 80px;
 } 
@@ -75,13 +75,25 @@ header ul li:active{
 /* FOOTER */
 
 footer{
-    background-color: #25706e;
+    background-color: #0c3735;
 
 }
-
-footer p{
-    font-size: 120%;
+/* 
+.cajaFooter{
+    display: flex;
+    flex-direction: column;
+} */
+footer h5{
+    color: #85b4b3;
 }
+
+footer .logo img{
+    height: 150px;
+    width: 150px;
+} 
+
+
+
 /* MAIN */
 
 /* INICIO */
