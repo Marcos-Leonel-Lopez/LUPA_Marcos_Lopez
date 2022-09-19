@@ -47,53 +47,71 @@
           <form class="caja d-flex">
             <fieldset class="caja_Turnos">
               <legend id="tituloCaja">Pedir turno</legend>
-                <div>
-                  <label for="nombre">Ingresa tu nombre:</label>
-                  <input id="nombre" type="text">
+             
+
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Ingrese su nombre</label>
+                  <input type="text" class="form-control" aria-label="name" required>
                 </div>
+
                 <div>
-                  <p>Selecciona el o los tratamientos:</p>
-                    <label>Manicuría</label>
-                    <input type="checkbox">
-                    <label>Pedicuría</label>
-                    <input type="checkbox">
-                    <label>Cosmetología</label>
-                    <input type="checkbox">
+                  <legend class="col-form-label">Selecciona el o los tratamientos:</legend>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Manicuría</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Pedicuría</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Cosmetología</label>
+                  </div>
                 </div>
+
                 <div>
-                  <label for="dia">Selecciona un dia</label>
-                </div>
-                <div>
+                  <label for="dia">Selecciona un dia: </label>
                   <input type="date" id="start" name="trip-start" value="2022-08-01" min="2022-01-01" max="2032-12-31">
                 </div>
-                <div>
-                  <label for="horario">Selecciona tu horario de preferencia</label>
-                  <select>
-                    <option>Mañana</option>
-                    <option>Siesta</option>
-                    <option>Tarde</option>
-                    <option>Noche</option>
+
+                <div class="col d-flex">
+                  <label class="col-6" for="autoSizingSelect">Selecciona tu horario de preferencia: </label>
+                  <select class="form-select" id="autoSizingSelect">
+                    <option value="1">Mañana</option>
+                    <option value="2">Siesta</option>
+                    <option value="3">Tarde</option>
+                    <option value="4">Noche</option>
                   </select>
                 </div>
-                <div>  
-                  <label for="celular">Ingresa tu numero de tel.:</label>
+                <div class="col-auto">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                    <label class="form-check-label" for="autoSizingCheck">
+                      Recordarme
+                    </label>
+                  </div>
                 </div>
-                <div>
-                  <input type="tel" id="celular" name="celular" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required maxlength="10">
-                  <small>Format: 3814567890</small>
+
+                <div class="col">
+                  <div class="col-md-6">
+                    <label for="numer" class="form-label">Ingresa tu numero de tel.:</label>
+                    <input type="tel" class="form-control" aria-label="name" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required maxlength="10" >
+                  </div>
                 </div>
-                <div>
-                  <label for="comentarios">Comentario (Opcional):</label>
+
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+                  <label for="floatingTextarea2" style="color:darkgray">Comentarios (opcional):</label>
                 </div>
-                <div class="cajasForm">  
-                  <textarea></textarea>
+
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Solicitar Turno</button>
+                  <button class="btn btn-primary" type="reset">Limpiar Formulario</button>
                 </div>
-                <div>
-                  <form>
-                    <input type="submit" value="Solucitar Turno" class="botonTurno">
-                    <input type="reset" value="Limpiar formulario" class="botonTurno">
-                  </form>
-                </div>
+
+              
+  
             </fieldset>
           </form>
 

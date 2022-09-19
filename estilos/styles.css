@@ -233,13 +233,14 @@ footer p{
 
 .caja{
     
-    height: 800px;
+    height: auto;
     justify-content: center;
     background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
+
 .caja_Turnos{
     display: flex;
     justify-content: space-around;
@@ -274,6 +275,16 @@ footer p{
     background-color: #25706E;
     border-radius: 20px;
     border-style: dotted;
+}
+
+@media screen and (max-width: 1200px) {
+    .caja_Turnos{
+        width: 100%;
+    }
+    
+    .caja{
+        background-image: none;
+    }
 }
 
 /* GALERIA */
