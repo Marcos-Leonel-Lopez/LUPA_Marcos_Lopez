@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* VARIABLES */
 /* CABECERA */
 header .navbar {
   background-color: #0d4b49;
@@ -76,9 +77,7 @@ footer .logo img {
 }
 footer h5 {
   color: #85b4b3;
-}
-
-/* INICIO */
+} /* INICIO */
 main .seccionPpl {
   background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
   background-repeat: no-repeat;
@@ -106,7 +105,7 @@ main .seccionPpl .textoPpl {
 
 /* SERVICIOS */
 main .tipoServicio .textServicio {
-  background-color: rgba(81, 168, 165, 0.8431372549);
+  background-color: rgba(74, 197, 193, 0.768627451);
   border: solid;
   font-weight: bold;
   font-size: 120%;
@@ -214,7 +213,7 @@ main .caja .caja_Turnos {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  background-color: rgba(57, 188, 184, 0.831372549);
+  background-color: rgba(74, 197, 193, 0.768627451);
   width: 45%;
   height: auto;
   font-size: 120%;
@@ -222,6 +221,8 @@ main .caja .caja_Turnos {
   border: solid;
   border-style: dotted;
   border-radius: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 main .caja .tituloCaja {
   font-size: 320%;

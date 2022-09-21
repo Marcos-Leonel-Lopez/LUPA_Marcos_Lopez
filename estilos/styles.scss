@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+/* VARIABLES */
+@import "./partials/vars";
 /* CABECERA */
 @import "./partials/header";
 /* FOOTER */
@@ -14,10 +16,6 @@
 @import "./partials/promociones";
 /* TURNOS */
 @import "./partials/turnos";
-
-
-
-
 
 /* GALERIA */
 .galeria{
