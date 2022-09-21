@@ -1,329 +1,285 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-
 
 /* CABECERA */
-
-
-.nav-link{
-    color: #24d2cc;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 120%;
-    padding-right: 30px;
-    padding-left: 30px;
+header .navbar {
+  background-color: #0d4b49;
 }
-
-
-.navbar{
-    background-color: #0d4b49;
+header .navbar .logo img {
+  width: auto;
+  height: 80px;
 }
-
-
-
-.navbar-nav .nav-link.active{
-    color: white;
-    font-size: 130%;
+header .navbar .navbar-nav {
+  color: white;
+  font-size: 130%;
+}
+header .navbar .navbar-nav .nav-link {
+  color: #24d2cc;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 120%;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+header .navbar .navbar-nav .nav-link:hover {
+  font-size: 150%;
+  transition: 0.5s;
+}
+header .navbar .navbar-nav .nav-link:active {
+  border: solid;
+  border-radius: 15px;
+  border-color: white;
+  transition: 0.01s;
+  background-color: #052e2d;
+}
+header .navbar .navbar-nav .active {
+  color: white;
+  font-size: 130%;
 }
 
 @media screen and (max-width: 768px) {
-    .navbar-nav .nav-link.active{
-        color: black;
-        font-size: 130%;
-    }  
-    .navbar{
-        background-image: url(../imagenes/logo/otros_formatos/facebook_cover_photo_2.png);
-        background-size: cover;
-        background-color: #ffffff;
-    }
-
-    .nav-link{
-        color: #0d4b49;
-    }
-
+  .navbar-nav .nav-link.active {
+    color: black;
+    font-size: 130%;
+  }
+  header .navbar {
+    background-image: url(../imagenes/logo/otros_formatos/facebook_cover_photo_2.png);
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  header .navbar .navbar-nav {
+    color: black;
+    font-size: 130%;
+  }
+  header .navbar .navbar-nav .nav-link {
+    color: #0d4b49;
+  }
+  header .navbar .navbar-nav .active {
+    color: black;
+    font-size: 130%;
+  }
 }
-
 @media screen and (max-width: 576px) {
-    .navbar{
-        background-image: none;
-    }
-    
+  header .navbar {
+    background-image: none;
+  }
 }
-
-
-
-header .logo img{
-    width: auto;
-    height: 80px;
-} 
-
-header ul li:hover{
-    font-size: 150%;
-    transition: 0.5s;
-
-}
-
-header ul li:active{
-    font-size: 150%;
-    border: solid;
-    border-radius: 15px;
-    background-color:  #052e2d;
-}
-
 /* FOOTER */
-
-footer{
-    background-color: #0c3735;
-
+footer {
+  background-color: #0c3735;
 }
-/* 
-.cajaFooter{
-    display: flex;
-    flex-direction: column;
-} */
-footer h5{
-    color: #85b4b3;
+footer .logo img {
+  height: 150px;
+  width: 150px;
 }
-
-footer .logo img{
-    height: 150px;
-    width: 150px;
-} 
-
-
-
-/* MAIN */
+footer h5 {
+  color: #85b4b3;
+}
 
 /* INICIO */
-
-.seccionPpl{
-    background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    
+.seccionPpl {
+  background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-
-
-.textoPpl{
-    display: flex;
-    font-style: italic;
-    background-color: #4ac5c1c4;
-    background-size: cover;
-    text-align: center;
-    text-justify: center;
-    font-size: 150%;
-    font-weight: bold;
-    align-items: center;
-    line-height: 120%;
+.textoPpl {
+  display: flex;
+  font-style: italic;
+  background-color: rgba(74, 197, 193, 0.768627451);
+  background-size: cover;
+  text-align: center;
+  text-justify: center;
+  font-size: 150%;
+  font-weight: bold;
+  align-items: center;
+  line-height: 120%;
 }
 
 @media screen and (max-width: 768px) {
-    .seccionPpl{
-        background-image: none;
-    }
-
-}
-
-
-/* SERVICIOS */
-
-
-.tipoServicio h2{
-    text-decoration: underline;
-    font-style: oblique;
-    font-weight: bold;
-    margin: 1rem 0rem 1rem 5rem;
-}
-
-.tipoServicio p,ul{
-    margin: 1rem 0rem 1rem 7rem; 
-}
-
-.tipoServicio li{
-    margin-bottom: 1rem;
-}
-
-.imgCel{
-    width: 220px;
-    height: auto;
-}
-
-
-
-.textServicio{
-    background-color: #51a8a5d7;
-    border: solid;
-    font-weight: bold;
-    font-size: 120%;
-
-}
-
-#mani{
-    background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-
-}
-#pedi{
-    background-image: url(../imagenes/pedicure-process-home-salon-pedicure-foot-care-treatment-and-nail-the-process-of-professional-pedicures-master-in-blue-gloves-make-pedicure.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-#cosme{
-    background-image: url(../imagenes/beautician-with-brush-applies-white-moisturizing-mask-to-the-face-of-young-girl-client-in-spa-beauty-salon.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-@media screen and (max-width: 768px) {
-   #mani ,#pedi, #cosme{
+  .seccionPpl {
     background-image: none;
-   }
+  }
+}
+/* SERVICIOS */
+.tipoServicio h2 {
+  text-decoration: underline;
+  font-style: oblique;
+  font-weight: bold;
+  margin: 1rem 0rem 1rem 5rem;
+}
 
-   .textServicio{
+.tipoServicio p, ul {
+  margin: 1rem 0rem 1rem 7rem;
+}
+
+.tipoServicio li {
+  margin-bottom: 1rem;
+}
+
+.imgCel {
+  width: 220px;
+  height: auto;
+}
+
+.textServicio {
+  background-color: rgba(81, 168, 165, 0.8431372549);
+  border: solid;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+#mani {
+  background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#pedi {
+  background-image: url(../imagenes/pedicure-process-home-salon-pedicure-foot-care-treatment-and-nail-the-process-of-professional-pedicures-master-in-blue-gloves-make-pedicure.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#cosme {
+  background-image: url(../imagenes/beautician-with-brush-applies-white-moisturizing-mask-to-the-face-of-young-girl-client-in-spa-beauty-salon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  #mani, #pedi, #cosme {
+    background-image: none;
+  }
+  .textServicio {
     text-align: start;
-   }
-
-   .tipoServicio h2{
+  }
+  .tipoServicio h2 {
     text-decoration: underline;
     font-style: oblique;
     font-weight: bold;
     margin: 1rem 0rem 1rem 1rem;
-    }
-
-    .tipoServicio p,ul{
-    margin: 1rem 0rem 1rem 4rem; 
-    }
-
-    .tipoServicio li{
+  }
+  .tipoServicio p, ul {
+    margin: 1rem 0rem 1rem 4rem;
+  }
+  .tipoServicio li {
     margin-bottom: 1rem;
-    }
-   
-
+  }
 }
-
 /* PROMOCIONES */
-
-.promo{
-    background-image: url(../imagenes/logo/otros_formatos/twitter_header_photo_2.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat-y;
+.promo {
+  background-image: url(../imagenes/logo/otros_formatos/twitter_header_photo_2.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
 }
 
-.cuerpoPromo{
-    background-color: #51a8a566;
-    border: groove;
+.cuerpoPromo {
+  background-color: rgba(81, 168, 165, 0.4);
+  border: groove;
 }
 
-.tarjetaMd{
-    display: flex;
-    justify-content: center;
+.tarjetaMd {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
-    .cuerpoPromo{
-        display: block;
-        height: 200px;
-    }
-
-  
+  .cuerpoPromo {
+    display: block;
+    height: 200px;
+  }
 }
-
 /* TURNOS */
-
-.caja{
-    
-    height: auto;
-    justify-content: center;
-    background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+.caja {
+  height: auto;
+  justify-content: center;
+  background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.caja_Turnos{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    background-color: #39bcb8d4;
-    width: 45%;
-    height: auto;
-    font-size: 120%;
-    font-weight: bold;
-    border: solid;
-    border-style: dotted;
-    border-radius: 20px;
+.caja_Turnos {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: rgba(57, 188, 184, 0.831372549);
+  width: 45%;
+  height: auto;
+  font-size: 120%;
+  font-weight: bold;
+  border: solid;
+  border-style: dotted;
+  border-radius: 20px;
 }
 
-.caja_Turnos div{
-    margin: 1%;
+.caja_Turnos div {
+  margin: 1%;
 }
 
-.botonTurno{
-    padding: 2%;
-    border-radius: 5px;
+.botonTurno {
+  padding: 2%;
+  border-radius: 5px;
 }
 
-.cajasForm textarea{
-    width: 100%;
-    height: 165px;
+.cajasForm textarea {
+  width: 100%;
+  height: 165px;
 }
 
-#tituloCaja{
-    font-size: 320%;
-    font-weight: boid;
-    background-color: #25706E;
-    border-radius: 20px;
-    border-style: dotted;
+#tituloCaja {
+  font-size: 320%;
+  font-weight: boid;
+  background-color: #25706E;
+  border-radius: 20px;
+  border-style: dotted;
 }
 
 @media screen and (max-width: 1200px) {
-    .caja_Turnos{
-        width: 100%;
-    }
-    
-    .caja{
-        background-image: none;
-    }
+  .caja_Turnos {
+    width: 100%;
+  }
+  .caja {
+    background-image: none;
+  }
 }
-
 /* GALERIA */
-.galeria{
-    display: flex;
-    flex-direction: column;
-    background-color:#24d2cc;
-    height: 50%;
-    width: auto;
+.galeria {
+  display: flex;
+  flex-direction: column;
+  background-color: #24d2cc;
+  height: 50%;
+  width: auto;
 }
 
-.galeria div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.galeria div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.galeria img{
-    display: flex;
-    height: auto;
-    width: 30%;
-    padding: 8px;
+.galeria img {
+  display: flex;
+  height: auto;
+  width: 30%;
+  padding: 8px;
 }
 
-.galeria h1{
-    font-size: 250%;
-    text-decoration: underline;
-    text-align: center;
-    padding: 10px;
-}
+.galeria h1 {
+  font-size: 250%;
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */

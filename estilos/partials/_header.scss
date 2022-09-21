@@ -1,0 +1,77 @@
+header{
+    .navbar{
+        background-color: #0d4b49;
+        .logo{
+            img{
+                width: auto;
+                height: 80px;
+            }
+        }
+        .navbar-nav{
+            color: white;
+            font-size: 130%;
+            .nav-link{
+                color: #24d2cc;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 120%;
+                padding-right: 30px;
+                padding-left: 30px;
+                &:hover{
+                    font-size: 150%;
+                    transition: 0.5s;
+                }
+                &:active{
+                    border: solid;
+                    border-radius: 15px;
+                    border-color: white;
+                    transition: 0.01s;
+                    background-color:  #052e2d;
+                }
+            }
+            .active{
+                color: white;
+                font-size: 130%;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .navbar-nav .nav-link.active{
+        color: black;
+        font-size: 130%;
+    }
+    header{  
+        .navbar{
+            background-image: url(../imagenes/logo/otros_formatos/facebook_cover_photo_2.png);
+            background-size: cover;
+            background-color: #ffffff;
+            .navbar-nav{
+                color: black;
+                font-size: 130%;
+                .nav-link{
+                    color: #0d4b49;
+                }
+                .active{
+                    color: black;
+                    font-size: 130%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header{
+        .navbar{
+            background-image: none;
+        }
+    }
+}
