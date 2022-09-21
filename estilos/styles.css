@@ -13,13 +13,13 @@ header .navbar .logo img {
 }
 header .navbar .navbar-nav {
   color: white;
-  font-size: 130%;
+  font-size: 100%;
 }
 header .navbar .navbar-nav .nav-link {
   color: #24d2cc;
   font-weight: bold;
   font-style: italic;
-  font-size: 120%;
+  font-size: 110%;
   padding-right: 30px;
   padding-left: 30px;
 }
@@ -38,9 +38,8 @@ header .navbar .navbar-nav .active {
   color: white;
   font-size: 130%;
 }
-
 @media screen and (max-width: 768px) {
-  .navbar-nav .nav-link.active {
+  header .navbar-nav .nav-link.active {
     color: black;
     font-size: 130%;
   }
@@ -66,6 +65,7 @@ header .navbar .navbar-nav .active {
     background-image: none;
   }
 }
+
 /* FOOTER */
 footer {
   background-color: #0c3735;
@@ -79,15 +79,14 @@ footer h5 {
 }
 
 /* INICIO */
-.seccionPpl {
+main .seccionPpl {
   background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
-
-.textoPpl {
+main .seccionPpl .textoPpl {
   display: flex;
   font-style: italic;
   background-color: rgba(74, 197, 193, 0.768627451);
@@ -99,84 +98,87 @@ footer h5 {
   align-items: center;
   line-height: 120%;
 }
-
 @media screen and (max-width: 768px) {
-  .seccionPpl {
+  main .seccionPpl {
     background-image: none;
   }
 }
+
 /* SERVICIOS */
-.tipoServicio h2 {
-  text-decoration: underline;
-  font-style: oblique;
-  font-weight: bold;
-  margin: 1rem 0rem 1rem 5rem;
-}
-
-.tipoServicio p, ul {
-  margin: 1rem 0rem 1rem 7rem;
-}
-
-.tipoServicio li {
-  margin-bottom: 1rem;
-}
-
-.imgCel {
-  width: 220px;
-  height: auto;
-}
-
-.textServicio {
+main .tipoServicio .textServicio {
   background-color: rgba(81, 168, 165, 0.8431372549);
   border: solid;
   font-weight: bold;
   font-size: 120%;
 }
-
-#mani {
+main .tipoServicio .textServicio h2 {
+  text-decoration: underline;
+  font-style: oblique;
+  font-weight: bold;
+  margin: 1rem 0rem 1rem 5rem;
+}
+main .tipoServicio .textServicio p {
+  margin: 1rem 0rem 1rem 7rem;
+}
+main .tipoServicio .textServicio ul {
+  margin: 1rem 0rem 1rem 7rem;
+}
+main .tipoServicio .textServicio ul li {
+  margin-bottom: 1rem;
+}
+main .tipoServicio .imgCel {
+  width: 220px;
+  height: auto;
+}
+main #mani {
   background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
-
-#pedi {
+main #pedi {
   background-image: url(../imagenes/pedicure-process-home-salon-pedicure-foot-care-treatment-and-nail-the-process-of-professional-pedicures-master-in-blue-gloves-make-pedicure.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
-
-#cosme {
+main #cosme {
   background-image: url(../imagenes/beautician-with-brush-applies-white-moisturizing-mask-to-the-face-of-young-girl-client-in-spa-beauty-salon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
-
 @media screen and (max-width: 768px) {
-  #mani, #pedi, #cosme {
+  main #mani, main #pedi, main #cosme {
     background-image: none;
   }
-  .textServicio {
+  main .tipoServicio .textServicio {
     text-align: start;
   }
-  .tipoServicio h2 {
+  main .tipoServicio .textServicio h2 {
     text-decoration: underline;
     font-style: oblique;
     font-weight: bold;
     margin: 1rem 0rem 1rem 1rem;
   }
-  .tipoServicio p, ul {
+  main .tipoServicio .textServicio p {
     margin: 1rem 0rem 1rem 4rem;
   }
-  .tipoServicio li {
+  main .tipoServicio .textServicio ul {
+    margin: 1rem 0rem 1rem 4rem;
+  }
+  main .tipoServicio .textServicio ul li {
     margin-bottom: 1rem;
   }
+  main .tipoServicio .imgCel {
+    width: 220px;
+    height: auto;
+  }
 }
+
 /* PROMOCIONES */
 .promo {
   background-image: url(../imagenes/logo/otros_formatos/twitter_header_photo_2.png);
@@ -184,25 +186,23 @@ footer h5 {
   background-position: center;
   background-repeat: repeat-y;
 }
-
-.cuerpoPromo {
-  background-color: rgba(81, 168, 165, 0.4);
-  border: groove;
-}
-
-.tarjetaMd {
+.promo .tarjetaMd {
   display: flex;
   justify-content: center;
 }
-
+.promo .tarjetaMd .cuerpoPromo {
+  background-color: rgba(81, 168, 165, 0.4);
+  border: groove;
+}
 @media screen and (max-width: 768px) {
-  .cuerpoPromo {
+  .promo .cuerpoPromo {
     display: block;
     height: 200px;
   }
 }
+
 /* TURNOS */
-.caja {
+main .caja {
   height: auto;
   justify-content: center;
   background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
@@ -210,8 +210,7 @@ footer h5 {
   background-position: center;
   background-attachment: fixed;
 }
-
-.caja_Turnos {
+main .caja .caja_Turnos {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -224,37 +223,26 @@ footer h5 {
   border-style: dotted;
   border-radius: 20px;
 }
-
-.caja_Turnos div {
-  margin: 1%;
-}
-
-.botonTurno {
-  padding: 2%;
-  border-radius: 5px;
-}
-
-.cajasForm textarea {
-  width: 100%;
-  height: 165px;
-}
-
-#tituloCaja {
+main .caja .tituloCaja {
   font-size: 320%;
   font-weight: boid;
   background-color: #25706E;
   border-radius: 20px;
   border-style: dotted;
 }
-
+main .caja .check {
+  border: groove;
+  border-radius: 5px;
+}
 @media screen and (max-width: 1200px) {
-  .caja_Turnos {
-    width: 100%;
-  }
-  .caja {
+  main .caja {
     background-image: none;
   }
+  main .caja .caja_Turnos {
+    width: 100%;
+  }
 }
+
 /* GALERIA */
 .galeria {
   display: flex;

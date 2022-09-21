@@ -9,12 +9,12 @@ header{
         }
         .navbar-nav{
             color: white;
-            font-size: 130%;
+            font-size: 100%;
             .nav-link{
                 color: #24d2cc;
                 font-weight: bold;
                 font-style: italic;
-                font-size: 120%;
+                font-size: 110%;
                 padding-right: 30px;
                 padding-left: 30px;
                 &:hover{
@@ -35,19 +35,14 @@ header{
             }
         }
     }
-}
+    
+    @media screen and (max-width: 768px) {
 
-
-
-
-@media screen and (max-width: 768px) {
-
-
-    .navbar-nav .nav-link.active{
-        color: black;
-        font-size: 130%;
-    }
-    header{  
+        .navbar-nav .nav-link.active{
+            color: black;
+            font-size: 130%;
+        }
+        
         .navbar{
             background-image: url(../imagenes/logo/otros_formatos/facebook_cover_photo_2.png);
             background-size: cover;
@@ -59,19 +54,24 @@ header{
                     color: #0d4b49;
                 }
                 .active{
-                    color: black;
+                     color: black;
                     font-size: 130%;
                 }
             }
-
+    
         }
     }
-}
 
-@media screen and (max-width: 576px) {
-    header{
+    @media screen and (max-width: 576px) { 
         .navbar{
             background-image: none;
         }
     }
 }
+    
+   
+
+
+
+
+

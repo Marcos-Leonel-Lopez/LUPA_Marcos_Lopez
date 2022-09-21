@@ -1,0 +1,44 @@
+main{
+    .caja{
+        height: auto;
+        justify-content: center;
+        background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        .caja_Turnos{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color: #39bcb8d4;
+            width: 45%;
+            height: auto;
+            font-size: 120%;
+            font-weight: bold;
+            border: solid;
+            border-style: dotted;
+            border-radius: 20px;    
+            }
+        .tituloCaja{
+            font-size: 320%;
+            font-weight: boid;
+            background-color: #25706E;
+            border-radius: 20px;
+            border-style: dotted;
+        }
+        .check{
+            border: groove;
+            border-radius: 5px;
+        }
+    }
+    
+    @media screen and (max-width: 1200px) {
+        
+        .caja{
+            background-image: none;
+            .caja_Turnos{
+                width: 100%;
+            }
+        }
+    }
+}

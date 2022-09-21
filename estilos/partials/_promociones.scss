@@ -1,0 +1,22 @@
+.promo{
+     background-image: url(../imagenes/logo/otros_formatos/twitter_header_photo_2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-y;
+    .tarjetaMd{
+        display: flex;
+        justify-content: center;
+        .cuerpoPromo{
+            background-color: #51a8a566;
+            border: groove;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .cuerpoPromo{
+            display: block;
+            height: 200px;
+        }
+    }
+}
+

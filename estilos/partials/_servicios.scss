@@ -1,0 +1,84 @@
+main{
+    .tipoServicio{
+        .textServicio{
+            background-color: #51a8a5d7;
+            border: solid;
+            font-weight: bold;
+            font-size: 120%;
+            h2{
+                text-decoration: underline;
+                font-style: oblique;
+                font-weight: bold;
+                margin: 1rem 0rem 1rem 5rem;
+            }
+            p{
+                margin: 1rem 0rem 1rem 7rem;   
+            }
+            ul{
+                margin: 1rem 0rem 1rem 7rem;
+                li{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .imgCel{
+            width: 220px;
+            height: auto;
+        }
+    }
+    #mani{
+        background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #pedi{
+        background-image: url(../imagenes/pedicure-process-home-salon-pedicure-foot-care-treatment-and-nail-the-process-of-professional-pedicures-master-in-blue-gloves-make-pedicure.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #cosme{
+        background-image: url(../imagenes/beautician-with-brush-applies-white-moisturizing-mask-to-the-face-of-young-girl-client-in-spa-beauty-salon.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 768px) {
+    
+        #mani ,#pedi, #cosme{
+            background-image: none;
+            }
+            .tipoServicio{
+            .textServicio{
+                text-align: start;
+                h2{
+                    text-decoration: underline;
+                    font-style: oblique;
+                    font-weight: bold;
+                    margin: 1rem 0rem 1rem 1rem;
+                }
+                p{
+                    margin: 1rem 0rem 1rem 4rem;   
+                }
+                ul{
+                     margin: 1rem 0rem 1rem 4rem;
+                    li{
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+            .imgCel{
+                width: 220px;
+                height: auto;
+            }
+        }
+        
+    }
+}
+
+
