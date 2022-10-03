@@ -1,6 +1,6 @@
 header{
     .navbar{
-        background-color: #0d4b49;
+        background-color: map-get($color, colorHead);
         .logo{
             img{
                 width: auto;
@@ -11,7 +11,7 @@ header{
             color: white;
             font-size: 100%;
             .nav-link{
-                color: #24d2cc;
+                color: map-get($color, colorNav);
                 font-weight: bold;
                 font-style: italic;
                 font-size: 110%;

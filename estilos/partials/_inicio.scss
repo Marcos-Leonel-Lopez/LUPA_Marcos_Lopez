@@ -8,7 +8,7 @@ main{
         .textoPpl{
             display: flex;
             font-style: italic;
-            background-color: $colorFondoTransp;
+            background-color: map-get($color, fondoTransp);
             background-size: cover;
             text-align: center;
             text-justify: center;

@@ -10,7 +10,7 @@ main{
             display: flex;
             justify-content: space-around;
             flex-direction: column;
-            background-color: $colorFondoTransp;
+            background-color: map-get($color, fondoTransp);
             width: 45%;
             height: auto;
             font-size: 120%;

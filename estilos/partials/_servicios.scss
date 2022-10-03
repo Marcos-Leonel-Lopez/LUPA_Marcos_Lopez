@@ -1,7 +1,7 @@
 main{
     .tipoServicio{
         .textServicio{
-            background-color: $colorFondoTransp;
+            background-color: map-get($color, fondoTransp);
             border: solid;
             font-weight: bold;
             font-size: 120%;
