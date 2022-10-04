@@ -29,24 +29,17 @@ main{
     }
     #mani{
         background-image: map-get($fondos,manos2);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
+        @extend %imgFondo;
     }
     #pedi{
         background-image: map-get($fondos,pies);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
+        @extend %imgFondo;
     }
     #cosme{
         background-image: map-get($fondos,cosmeto);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
+        @include imgFondo($repet: no-repeat);
         background-size: cover;
+        
     }
 
     @media screen and (max-width: 768px) {

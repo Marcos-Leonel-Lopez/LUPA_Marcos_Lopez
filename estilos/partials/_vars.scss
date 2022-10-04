@@ -12,3 +12,15 @@ $fondos:(
     cosmeto:    url(https://img.freepik.com/foto-gratis/esteticista-pincel-aplica-mascarilla-hidratante-blanca-cara-cliente-joven-salon-belleza-spa_343596-4246.jpg?w=1380&t=st=1664842382~exp=1664842982~hmac=b1b6171bd6c97a7ecb47d3ba8a104e5a1304a64bab8cf0c9f6e2e3b6dffc64e1)
 );
 
+%imgFondo{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@mixin imgFondo($repet) {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: $repet;
+}
