@@ -28,21 +28,21 @@ main{
         }
     }
     #mani{
-        background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
+        background-image: map-get($fondos,manos2);
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
     }
     #pedi{
-        background-image: url(../imagenes/pedicure-process-home-salon-pedicure-foot-care-treatment-and-nail-the-process-of-professional-pedicures-master-in-blue-gloves-make-pedicure.jpg);
+        background-image: map-get($fondos,pies);
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
     }
     #cosme{
-        background-image: url(../imagenes/beautician-with-brush-applies-white-moisturizing-mask-to-the-face-of-young-girl-client-in-spa-beauty-salon.jpg);
+        background-image: map-get($fondos,cosmeto);
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
