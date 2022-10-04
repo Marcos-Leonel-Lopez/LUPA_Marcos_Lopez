@@ -17,6 +17,9 @@ header{
                 font-size: 110%;
                 padding-right: 30px;
                 padding-left: 30px;
+                margin-left: 15px;
+                border: solid;
+                border-radius: 15px;
                 &:hover{
                     font-size: 150%;
                     transition: 0.5s;
@@ -32,6 +35,7 @@ header{
             .active{
                 color: white;
                 font-size: 130%;
+                background-color:  #052e2d;
             }
         }
     }
@@ -41,6 +45,7 @@ header{
         .navbar-nav .nav-link.active{
             color: black;
             font-size: 130%;
+            background-color: none;
         }
         
         .navbar{
@@ -52,10 +57,12 @@ header{
                 font-size: 130%;
                 .nav-link{
                     color: #0d4b49;
+                    border: none;
                 }
                 .active{
-                     color: black;
+                    color: black;
                     font-size: 130%;
+                    background-color: unset;
                 }
             }
     

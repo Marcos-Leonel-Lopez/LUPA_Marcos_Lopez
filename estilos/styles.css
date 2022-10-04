@@ -23,6 +23,9 @@ header .navbar .navbar-nav .nav-link {
   font-size: 110%;
   padding-right: 30px;
   padding-left: 30px;
+  margin-left: 15px;
+  border: solid;
+  border-radius: 15px;
 }
 header .navbar .navbar-nav .nav-link:hover {
   font-size: 150%;
@@ -38,11 +41,13 @@ header .navbar .navbar-nav .nav-link:active {
 header .navbar .navbar-nav .active {
   color: white;
   font-size: 130%;
+  background-color: #052e2d;
 }
 @media screen and (max-width: 768px) {
   header .navbar-nav .nav-link.active {
     color: black;
     font-size: 130%;
+    background-color: none;
   }
   header .navbar {
     background-image: url(../imagenes/logo/otros_formatos/facebook_cover_photo_2.png);
@@ -55,10 +60,12 @@ header .navbar .navbar-nav .active {
   }
   header .navbar .navbar-nav .nav-link {
     color: #0d4b49;
+    border: none;
   }
   header .navbar .navbar-nav .active {
     color: black;
     font-size: 130%;
+    background-color: unset;
   }
 }
 @media screen and (max-width: 576px) {
@@ -126,7 +133,7 @@ main .tipoServicio .textServicio ul li {
   margin-bottom: 1rem;
 }
 main .tipoServicio .imgCel {
-  width: 220px;
+  width: 275px;
   height: auto;
 }
 main #mani {
