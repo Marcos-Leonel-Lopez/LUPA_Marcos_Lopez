@@ -16,32 +16,28 @@
 @import "./partials/promociones";
 /* TURNOS */
 @import "./partials/turnos";
-
 /* GALERIA */
-.galeria{
-    display: flex;
-    flex-direction: column;
-    background-color:#24d2cc;
-    height: 50%;
-    width: auto;
-}
+@import "./partials/galeria";
 
-.galeria div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-.galeria img{
-    display: flex;
-    height: auto;
-    width: 30%;
-    padding: 8px;
-}
+// .galeria{
+//     display: flex;
+//     flex-direction: column;
+//     background-color:#24d2cc;
+//     height: 50%;
+//     width: auto;
+// }
 
-.galeria h1{
-    font-size: 250%;
-    text-decoration: underline;
-    text-align: center;
-    padding: 10px;
-}
+// .galeria div{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+// }
+
+// .galeria img{
+//     display: flex;
+//     height: auto;
+//     width: 30%;
+//     padding: 8px;
+// }
+
