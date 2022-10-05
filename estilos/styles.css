@@ -251,10 +251,10 @@ main .caja .check {
 }
 
 /* GALERIA */
-main .galeria {
+.cuerpoGaleria {
   background-color: #24d2cc;
 }
-main .galeria h1 {
+.cuerpoGaleria .textGaleria h1 {
   font-size: 250%;
   text-decoration: underline;
   text-align: center;
