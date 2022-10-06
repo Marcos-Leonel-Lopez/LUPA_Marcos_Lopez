@@ -1,10 +1,7 @@
 main{
     .seccionPpl{
         background-image: map-get($fondos,manos1);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
+        @extend %imgFondo;
         .textoPpl{
             display: flex;
             font-style: italic;
