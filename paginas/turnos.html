@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="uñas, pedicura, manicura, cosmpetologia, esmaltado, semi-permanente, kapping, spa, pilling, pies, manos, belleza, estetica">
-    <meta name="description" content="Un espacio para que puedas contactarte conmigo, recerves tu turno y puedas realizar consultas">
-    <link rel="shorcut icon" href="../imagenes/logo/logo_transparent.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/styles.css">
-    <title>Turnos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="uñas, pedicura, manicura, cosmpetologia, esmaltado, semi-permanente, kapping, spa, pilling, pies, manos, belleza, estetica">
+  <meta name="description"
+    content="Un espacio para que puedas contactarte conmigo, recerves tu turno y puedas realizar consultas">
+  <link rel="shorcut icon" href="../imagenes/logo/logo_transparent.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../estilos/styles.css">
+  <title>Turnos</title>
 </head>
 <body class="container-fluid">
   <header>
     <nav class="navbar navbar-expand-md bg-blak ">
       <div class="container-fluid">
         <a class="navbar-brand logo" href="../index.html">
-          <img src="../imagenes/logo/logo_transparent.png" alt="Logo" class="d-inline-block align-text-top text-sm-left">
+          <img src="../imagenes/logo/logo_transparent.png" alt="Logo"
+            class="d-inline-block align-text-top text-sm-left">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,131 +48,120 @@
       </div>
     </nav>
   </header>
-    <main>
-      <section class="row">
-        <section class="col">
-          <form class="caja d-flex">
-            <fieldset class="caja_Turnos mt-2 mb-2">
-              <legend class="tituloCaja">Pedir turno</legend>
-             
-              <div class="col-md-6 mb-2">
-                <label for="inputEmail4" class="form-label">Ingrese su nombre:</label>
-                <input type="text" class="form-control" aria-label="name" required>
+  <main>
+    <section class="row">
+      <section class="col">
+        <form class="caja d-flex">
+          <fieldset class="caja_Turnos mt-2 mb-2">
+            <legend class="tituloCaja">Pedir turno</legend>
+            <div class="col-md-6 mb-2">
+              <label for="inputEmail4" class="form-label">Ingrese su nombre:</label>
+              <input type="text" class="form-control" aria-label="name" required>
+            </div>
+            <div class="mb-3">
+              <legend class="col-form-label">Selecciona el o los tratamientos:</legend>
+              <div class="form-check form-check-inline mb-3  check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Manicuría</label>
               </div>
-
-              <div class="mb-3">
-                <legend class="col-form-label">Selecciona el o los tratamientos:</legend>
-                <div class="form-check form-check-inline mb-3  check"  >
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">Manicuría</label>
-                </div>
-                <div class="form-check form-check-inline mb-3  check" >
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                  <label class="form-check-label" for="inlineCheckbox2">Pedicuría</label>
-                </div>
-                <div class="form-check form-check-inline mb-3  check">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                  <label class="form-check-label" for="inlineCheckbox3">Cosmetología</label>
-                </div>
-               </div>
-
-              <div class="mb-3">
-                <label for="start">Selecciona un dia: </label>
-                <input type="date" id="start" name="trip-start" value="2022-08-01" min="2022-01-01" max="2032-12-31">
+              <div class="form-check form-check-inline mb-3  check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Pedicuría</label>
               </div>
-
-              <div class="col d-flex mb-2">
-                <label class="col-6" for="autoSizingSelect">Selecciona tu horario de preferencia: </label>
-                <select class="form-select" id="autoSizingSelect">
-                  <option value="1">Mañana</option>
-                  <option value="2">Siesta</option>
-                  <option value="3">Tarde</option>
-                  <option value="4">Noche</option>
-                </select>
+              <div class="form-check form-check-inline mb-3  check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Cosmetología</label>
               </div>
-
-              <div class="col mb-3">
-                <div class="form-check-inline check">
-                  <label class="form-check-label" for="autoSizingCheck">Recordarme</label>
-                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                </div>
+            </div>
+            <div class="mb-3">
+              <label for="start">Selecciona un dia: </label>
+              <input type="date" id="start" name="trip-start" value="2022-08-01" min="2022-01-01" max="2032-12-31">
+            </div>
+            <div class="col d-flex mb-2">
+              <label class="col-6" for="autoSizingSelect">Selecciona tu horario de preferencia: </label>
+              <select class="form-select" id="autoSizingSelect">
+                <option value="1">Mañana</option>
+                <option value="2">Siesta</option>
+                <option value="3">Tarde</option>
+                <option value="4">Noche</option>
+              </select>
+            </div>
+            <div class="col mb-3">
+              <div class="form-check-inline check">
+                <label class="form-check-label" for="autoSizingCheck">Recordarme</label>
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
               </div>
-
-              <div class="col mb-3">
-                <div class="col-md-6">
-                  <label for="numer" class="form-label">Ingresa tu numero de tel.:</label>
-                  <input type="tel" class="form-control" aria-label="name" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required maxlength="10" >
-                </div>
+            </div>
+            <div class="col mb-3">
+              <div class="col-md-6">
+                <label for="numer" class="form-label">Ingresa tu numero de tel.:</label>
+                <input type="tel" class="form-control" aria-label="name" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required
+                  maxlength="10">
               </div>
-
-              <div class="form-floating mb-4">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
-                <label for="floatingTextarea2" style="color:darkgray">Comentarios (opcional):</label>
-              </div>
-
-              <div class="col-12 mb-3 ">
-                <button class="btn btn-success" type="submit">Solicitar Turno</button>
-                <button class="btn btn-danger" type="reset">Limpiar Formulario</button>
-              </div>
-
-              
-  
-            </fieldset>
-          </form>
-
-
-        </section>
+            </div>
+            <div class="form-floating mb-4">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 150px"></textarea>
+              <label for="floatingTextarea2" style="color:darkgray">Comentarios (opcional):</label>
+            </div>
+            <div class="col-12 mb-3 ">
+              <button class="btn btn-success" type="submit">Solicitar Turno</button>
+              <button class="btn btn-danger" type="reset">Limpiar Formulario</button>
+            </div>
+          </fieldset>
+        </form>
       </section>
-      
-    </main>
-  
-    <footer class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-md-6 col-lg-3 logo cajaFooter">
-          <img src="../imagenes/logo/logo_transparent.png" alt="Logo" class="ms-1">
-          <p class="text-secondary ms-4">Lules, Tucumán</p>
-          <p class="text-secondary ms-3">All rights reserved © 2022</p>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-3 cajaFooter">
-          <h5 class="my-3">Secciones</h5>
-          <div class="mb-2">
-            <a class="text-decoration-none text-secondary" href="../index.html">Inicio</a>
-          </div>
-          <div class="mb-2">
-            <a class="text-decoration-none text-secondary" href="./servicios.html">Servicios</a>
-          </div>
-          <div class="mb-2">
-            <a class="text-decoration-none text-secondary" href="./promociones.html">Promocioes</a>
-          </div>
-          <div class="mb-2">
-            <a class="text-decoration-none text-secondary" href="./turnos.html">Turnos</a>
-          </div>
-          <div class="mb-2">
-            <a class="text-decoration-none text-secondary" href="./galeria.html">Galeria</a>
-          </div> 
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-3 cajaFooter">
-          <h5 class="my-3">Links</h5>
-          <div class="mb-2">
-            <a class="text-decoration-none text-secondary" href="#">Terms & Conditions</a>
-          </div>
-          <div class="mb-2">
-            <a class="text-decoration-none text-secondary" href="#">Privacy Policy</a>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-3 cajaFooter">
-          <h5 class="my-3">Redes Sociales</h5>
-          <div class="mb-2">
-            <a class="text-decoration-none text-secondary" href="https://www.facebook.com/LUPATUC">Facebook</a>
-            <a href="#"><img src="../imagenes/logo/face.png" width="40px" height="40px"></a>
-          </div>
-          <div class="mb-2">
-            <a class="text-decoration-none text-secondary" href="https://www.instagram.com/lupatuc/">Instagram</a>
-            <a href="#"><img src="../imagenes/logo/insta.png" width="34px" height="34px"></a>
-          </div>
-        </div>      
+    </section>
+  </main>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-3 logo cajaFooter">
+        <img src="../imagenes/logo/logo_transparent.png" alt="Logo" class="ms-1">
+        <p class="text-secondary ms-4">Lules, Tucumán</p>
+        <p class="text-secondary ms-3">All rights reserved © 2022</p>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      <div class="col-xs-12 col-md-6 col-lg-3 cajaFooter">
+        <h5 class="my-3">Secciones</h5>
+        <div class="mb-2">
+          <a class="text-decoration-none text-secondary" href="../index.html">Inicio</a>
+        </div>
+        <div class="mb-2">
+          <a class="text-decoration-none text-secondary" href="./servicios.html">Servicios</a>
+        </div>
+        <div class="mb-2">
+          <a class="text-decoration-none text-secondary" href="./promociones.html">Promocioes</a>
+        </div>
+        <div class="mb-2">
+          <a class="text-decoration-none text-secondary" href="./turnos.html">Turnos</a>
+        </div>
+        <div class="mb-2">
+          <a class="text-decoration-none text-secondary" href="./galeria.html">Galeria</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 cajaFooter">
+        <h5 class="my-3">Links</h5>
+        <div class="mb-2">
+          <a class="text-decoration-none text-secondary" href="#">Terms & Conditions</a>
+        </div>
+        <div class="mb-2">
+          <a class="text-decoration-none text-secondary" href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 cajaFooter">
+        <h5 class="my-3">Redes Sociales</h5>
+        <div class="mb-2">
+          <a class="text-decoration-none text-secondary" href="https://www.facebook.com/LUPATUC">Facebook</a>
+          <a href="#"><img src="../imagenes/logo/face.png" width="40px" height="40px"></a>
+        </div>
+        <div class="mb-2">
+          <a class="text-decoration-none text-secondary" href="https://www.instagram.com/lupatuc/">Instagram</a>
+          <a href="#"><img src="../imagenes/logo/insta.png" width="34px" height="34px"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
 </html>
