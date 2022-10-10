@@ -40,6 +40,23 @@ header{
         }
     }
     
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .navbar{
+        .navbar-nav{
+            .nav-link{
+                font-size: 100%;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            .active{
+                font-size: 110%;
+            }
+        }
+    }
+    
+}
+
+
     @media screen and (max-width: 768px) {
 
         .navbar-nav .nav-link.active{

@@ -54,6 +54,16 @@ header .navbar .navbar-nav .active {
   font-size: 130%;
   background-color: #052e2d;
 }
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  header .navbar .navbar-nav .nav-link {
+    font-size: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  header .navbar .navbar-nav .active {
+    font-size: 110%;
+  }
+}
 @media screen and (max-width: 768px) {
   header .navbar-nav .nav-link.active {
     color: black;
