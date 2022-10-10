@@ -1,6 +1,6 @@
 
     .cuerpoGaleria{
-        background-color: #dbf0ef;
+        background-color: map-get($color, fondoGaleria);
     .textGaleria{
         
         h1{
