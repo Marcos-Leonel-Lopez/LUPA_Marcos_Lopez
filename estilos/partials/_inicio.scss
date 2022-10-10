@@ -12,7 +12,7 @@ main{
             font-size: 150%;
             font-weight: bold;
             align-items: center;
-            line-height: 120%;
+            line-height: 250%;
         }
     }
 
@@ -20,9 +20,23 @@ main{
         
             .seccionPpl{
             background-image: none;
+            .textoPpl{
+                line-height: 170%;
+            }
             }
         
     }
+    @media screen and (max-width: 576px) {
+        
+        .seccionPpl{
+        background-image: none;
+        .textoPpl{
+            line-height: 120%;
+            font-size: 130%;
+        }
+        }
+    
+}
 
 }
 

@@ -2,10 +2,8 @@ main{
     .caja{
         height: auto;
         justify-content: center;
-        background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
+        background-image: map-get($fondos,manos1);
+        @extend %imgFondo;
         .caja_Turnos{
             display: flex;
             justify-content: space-around;

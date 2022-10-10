@@ -3,8 +3,12 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto Slab", serif;
+}
+
 /* VARIABLES */
-main #pedi, main #mani, main .seccionPpl {
+main .caja, main #pedi, main #mani, main .seccionPpl {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -91,7 +95,9 @@ footer .logo img {
 }
 footer h5 {
   color: #85b4b3;
-} /* INICIO */
+}
+
+/* INICIO */
 main .seccionPpl {
   background-image: url(https://img.freepik.com/foto-gratis/nail-tech-limando-lima-herramientas-manicura-profesional_176420-11581.jpg?w=1380&t=st=1664842005~exp=1664842605~hmac=10ae35774bc2b01cde4f6d746ab81e72500c32327a90aa25222b2cd7cdd7f454);
 }
@@ -105,11 +111,23 @@ main .seccionPpl .textoPpl {
   font-size: 150%;
   font-weight: bold;
   align-items: center;
-  line-height: 120%;
+  line-height: 250%;
 }
 @media screen and (max-width: 768px) {
   main .seccionPpl {
     background-image: none;
+  }
+  main .seccionPpl .textoPpl {
+    line-height: 170%;
+  }
+}
+@media screen and (max-width: 576px) {
+  main .seccionPpl {
+    background-image: none;
+  }
+  main .seccionPpl .textoPpl {
+    line-height: 120%;
+    font-size: 130%;
   }
 }
 
@@ -190,10 +208,15 @@ main #cosme {
 .promo .tarjetaMd {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 .promo .tarjetaMd .cuerpoPromo {
   background-color: rgba(81, 168, 165, 0.4);
   border: groove;
+  font-weight: bold;
+}
+.promo .tarjetaMd .cuerpoPromo h5 {
+  text-decoration: underline;
 }
 @media screen and (max-width: 768px) {
   .promo .cuerpoPromo {
@@ -206,10 +229,7 @@ main #cosme {
 main .caja {
   height: auto;
   justify-content: center;
-  background-image: url(../imagenes/nail-tech-filing-nails-with-nail-file-professional-manicure-tools.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-image: url(https://img.freepik.com/foto-gratis/nail-tech-limando-lima-herramientas-manicura-profesional_176420-11581.jpg?w=1380&t=st=1664842005~exp=1664842605~hmac=10ae35774bc2b01cde4f6d746ab81e72500c32327a90aa25222b2cd7cdd7f454);
 }
 main .caja .caja_Turnos {
   display: flex;
@@ -251,8 +271,9 @@ main .caja .check {
   background-color: #dbf0ef;
 }
 .cuerpoGaleria .textGaleria h1 {
-  font-size: 250%;
+  font-size: 270%;
   text-decoration: underline;
   text-align: center;
   margin-top: 20px;
+  font-weight: bolder;
 }/*# sourceMappingURL=styles.css.map */
