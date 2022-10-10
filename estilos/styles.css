@@ -215,9 +215,6 @@ main #cosme {
   border: groove;
   font-weight: bold;
 }
-.promo .tarjetaMd .cuerpoPromo h5 {
-  text-decoration: underline;
-}
 @media screen and (max-width: 768px) {
   .promo .cuerpoPromo {
     display: block;
