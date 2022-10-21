@@ -234,7 +234,9 @@ main #cosme {
 }
 .promo .cuerpoMd h5, .promo .cuerpoMd p {
   font-weight: bolder;
-} /* TURNOS */
+}
+
+/* TURNOS */
 main .caja {
   height: auto;
   justify-content: center;
