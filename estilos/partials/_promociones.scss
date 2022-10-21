@@ -2,22 +2,23 @@
     background-image: url(../imagenes/logo/otros_formatos/twitter_header_photo_2.png);
     @include imgFondo($repet: repeat-y);
 
-    .tarjetaMd {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    
-
+    .cardDesktop {
         .cuerpoPromo {
-            background-color: #51a8a566;
+            background-color: map-get($color, fondoGaleria);
             border: groove;
-            font-weight: bold; 
+            font-size: 110%;
+            h5{
+               font-weight: bold; 
+            }
+            
         }
     }
 
-    @media screen and (max-width: 768px) {
-        .cuerpoPromo {
-            background-color: map-get($color,fondoHead );
+    
+        .cuerpoMd {
+            background-color: map-get($color, fondoGaleria);
+            h5,p{font-weight: bolder;}
+            
         }
-    }
+    
 }

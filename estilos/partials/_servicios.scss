@@ -49,6 +49,7 @@ main{
             }
             .tipoServicio{
             .textServicio{
+                background-color: map-get($color, fondoClaro); 
                 text-align: start;
                 h2{
                     text-decoration: underline;

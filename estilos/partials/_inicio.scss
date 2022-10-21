@@ -22,6 +22,7 @@ main{
             background-image: none;
             .textoPpl{
                 line-height: 170%;
+                background-color: map-get($color, fondoClaro); 
             }
             }
         

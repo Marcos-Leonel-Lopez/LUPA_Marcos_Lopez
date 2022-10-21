@@ -133,6 +133,7 @@ main .seccionPpl .textoPpl {
   }
   main .seccionPpl .textoPpl {
     line-height: 170%;
+    background-color: #b0ebe8;
   }
 }
 @media screen and (max-width: 576px) {
@@ -189,6 +190,7 @@ main #cosme {
     background-image: none;
   }
   main .tipoServicio .textServicio {
+    background-color: #b0ebe8;
     text-align: start;
   }
   main .tipoServicio .textServicio h2 {
@@ -219,17 +221,20 @@ main #cosme {
   background-position: center;
   background-repeat: repeat-y;
 }
-.promo .tarjetaMd {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.promo .tarjetaMd .cuerpoPromo {
-  background-color: rgba(81, 168, 165, 0.4);
+.promo .cardDesktop .cuerpoPromo {
+  background-color: #dbf0ef;
   border: groove;
+  font-size: 110%;
+}
+.promo .cardDesktop .cuerpoPromo h5 {
   font-weight: bold;
 }
-/* TURNOS */
+.promo .cuerpoMd {
+  background-color: #dbf0ef;
+}
+.promo .cuerpoMd h5, .promo .cuerpoMd p {
+  font-weight: bolder;
+} /* TURNOS */
 main .caja {
   height: auto;
   justify-content: center;
