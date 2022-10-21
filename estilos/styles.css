@@ -229,13 +229,6 @@ main #cosme {
   border: groove;
   font-weight: bold;
 }
-@media screen and (max-width: 768px) {
-  .promo .cuerpoPromo {
-    display: block;
-    height: 200px;
-  }
-}
-
 /* TURNOS */
 main .caja {
   height: auto;
