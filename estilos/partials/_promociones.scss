@@ -18,5 +18,13 @@
             h5,p{font-weight: bolder;}
             
         }
+
+        @media screen and (max-width: 768px) {
+            .card-header{
+                img{
+                    border-radius: 10px;
+                }
+            }
+        }
     
 }

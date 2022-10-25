@@ -7,7 +7,6 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
-/* VARIABLES */
 main .caja, main #pedi, main #mani, main .seccionPpl {
   background-repeat: no-repeat;
   background-position: center;
@@ -15,7 +14,6 @@ main .caja, main #pedi, main #mani, main .seccionPpl {
   background-size: cover;
 }
 
-/* CABECERA */
 header .navbar {
   background-color: #0d4b49;
 }
@@ -99,7 +97,6 @@ header .navbar .navbar-nav .active {
   }
 }
 
-/* FOOTER */
 footer {
   background-color: #0c3735;
 }
@@ -111,7 +108,6 @@ footer h5 {
   color: #85b4b3;
 }
 
-/* INICIO */
 main .seccionPpl {
   background-image: url(https://img.freepik.com/foto-gratis/nail-tech-limando-lima-herramientas-manicura-profesional_176420-11581.jpg?w=1380&t=st=1664842005~exp=1664842605~hmac=10ae35774bc2b01cde4f6d746ab81e72500c32327a90aa25222b2cd7cdd7f454);
 }
@@ -146,7 +142,6 @@ main .seccionPpl .textoPpl {
   }
 }
 
-/* SERVICIOS */
 main .tipoServicio .textServicio {
   background-color: rgba(74, 197, 193, 0.768627451);
   border: solid;
@@ -214,7 +209,6 @@ main #cosme {
   }
 }
 
-/* PROMOCIONES */
 .promo {
   background-image: url(../imagenes/logo/otros_formatos/twitter_header_photo_2.png);
   background-attachment: fixed;
@@ -235,8 +229,12 @@ main #cosme {
 .promo .cuerpoMd h5, .promo .cuerpoMd p {
   font-weight: bolder;
 }
+@media screen and (max-width: 768px) {
+  .promo .card-header img {
+    border-radius: 10px;
+  }
+}
 
-/* TURNOS */
 main .caja {
   height: auto;
   justify-content: center;
@@ -277,7 +275,6 @@ main .caja .check {
   }
 }
 
-/* GALERIA */
 .cuerpoGaleria {
   background-color: #dbf0ef;
 }
